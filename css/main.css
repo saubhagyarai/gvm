@@ -385,6 +385,28 @@ section.slider {
   position: relative;
 }
 
+.slider .slick-prev {
+  left: 25px;
+  z-index: 2;
+  border: 1px solid var(--secondary-color);
+  height: 45px;
+  width: 45px;
+}
+
+.slider .slick-next {
+  right: 25px;
+  z-index: 2;
+  border: 1px solid var(--secondary-color);
+  height: 45px;
+  width: 45px;
+}
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  font-family: unset;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
 .slider .slick-list,
 .slider .slick-list > div {
   height: 100%;
