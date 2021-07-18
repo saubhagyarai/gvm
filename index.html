@@ -28,6 +28,9 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 
+     <!-- Fancybox -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -38,24 +41,30 @@
           <div class="top-header-items">
             <ul class="left-items">
               <li>
-                <span><i class="fas fa-phone"></i></span>
-                <a href="#">+0-1111111</a>
+                <a href="#">
+                <i class="fas fa-phone"></i>
+                <span>+0-1111111</span></a>
               </li>
               <li>
-                <span><i class="fas fa-mobile"></i></span>
-                <a href="#">999999999</a>
+                <a href="#">
+                <i class="fas fa-mobile"></i>
+                <span>999999999</span></a>
               </li>
               <li>
-                <span><i class="fas fa-envelope"></i></span>
-                <a href="#">info@gvm.com.np</a>
+                <a href="#">
+                <i class="fas fa-envelope"></i>
+                <span>info@gvm.com.np</span></a>
               </li>
-              <li>
+              <!-- <li>
                 <span><i class="fas fa-map-marker-alt"></i></span>
                 <a href="">Belbari | Morang</a>
-              </li>
+              </li> -->
             </ul>
 
             <ul class="right-items">
+              <li>
+                <a href="">Online Application</a>
+              </li>
               <li>
                 <a href=""><i class="fab fa-facebook-f"></i></a>
               </li>
@@ -76,12 +85,19 @@
       <div class="bottom-header">
         <div class="wrapper">
           <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
+              <a href="">
               <div class="logo">
-                <img src="img/logo.jpg" alt="">
+                <img src="img/logo1.png" alt="">
+              </div>
+              </a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-3">
+              <div class="logo2">
+                <!-- <img src="img/logo2_1625978840.png" alt=""> -->
               </div>
             </div>
-            <div class="col-lg-10 col-md-10 col-sm-6 col-6">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-6">
             <nav class="navbar navbar-expand-lg navbar-light fa-pull-right">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -90,7 +106,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,27 +115,71 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="about.html">Action</a>
                         <a class="dropdown-item" href="about.html">Another action</a>
-                        <!-- <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a> -->
                     </div>
-                    </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="academics.html">Academics</a>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Admission</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="academics.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Academics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="academics.html">ActionAction ActionAction Action</a>
+                        <a class="dropdown-item" href="academics.html">Another action</a>
+                    </div>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="facility.html">Facilities</a>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="admission.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admission
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="academics.html">Action</a>
+                        <a class="dropdown-item" href="academics.html">Another action</a>
+                    </div>
                   </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="life.html">School Life</a>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="facility.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Facilities
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="facility.html">Action</a>
+                        <a class="dropdown-item" href="facility.html">Another actionactionaction</a>
+                    </div>
                   </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="notice.html">Events & Notice</a>
+                </li>  
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="life.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        School Life
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">Action</a>
+                        <a class="dropdown-item" href="about.html">Another action</a>
+                    </div>
+                  </li> -->
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="life.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="left: -50px;">
+                        <a class="dropdown-item" href="career.html">Career</a>
+                        <a class="dropdown-item" href="gallery.html">Gallery</a>
+                        <a class="dropdown-item" href="notice.html">Notices</a>
+                        <a class="dropdown-item" href="blog.html">Blog & Aricle</a>
+                        <a class="dropdown-item" href="alumni.html">Alumni</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                    </div>
+                  </li>
+
+<!-- 
                   <li class="nav-item">
                       <a class="nav-link" href="career.html">Career</a>
                   </li>                        <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
+                  </li> -->
               </ul>
               </div>
             </nav>
@@ -359,97 +419,105 @@
     </section>
     <!-- End of Facilites Section -->
 
-    <!-- School Life Section -->
-    <section class="school-life">
+
+    <!-- Blog Section /Gallery -->
+    <section class="blog">
       <div class="wrapper">
         <div class="head-title">
           <h2>
-            School Life
+            Gallery
           </h2>
+          <a href="gallery.html" class="button">View All</a>
         </div>
         <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4">
-            <div class="school-life-left">
-              <h4>Extraordinary Boarding Schools</h4>
-              <p>Co-curricular activities play a very important role in Malpi International School. The School offers many activities for its students like Sports, Games, Clubs, Inter-House Competitions, Horse-Riding, Swimming, Pottery, Educational Excursions, Outdoor Education Programmes, International Exchange Programmes, and many more. The varied range of co-curricular activities also comes under the overall evaluation system of the student.
 
-                The in-built programs in the students’ academic curriculum include activities that promote the students’ all-round development - Music, Arts and Crafts, Karate, Physical Excellence (PhyEx), Drama, Debates, Quizzes, Elocutions and many more
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/about.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/about.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
+                    </div>
+                </a>
 
-
-
-
-              </p>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-8">
-            <div class="row">
-              
-              <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                <div class="school-life-card">
-                  <div class="illustration">
-                    <img src="img/transport.jpg" alt="">
-                  </div>
-                  <div class="descriptions">
-                    <p>Co-Curricular And Extra Curricular Activities </p>
-                    <a href="life.html" class="sm-button">
-                      learn more
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/library.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/library.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/person.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/person.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
+                    </div>
+                </a>
 
-              <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                <div class="school-life-card">
-                  <div class="illustration">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/about.jpg" class="fancybox" data-fancybox="gallery1">
                     <img src="img/about.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
+                    </div>
+                </a>
 
-                  </div>
-                  <div class="descriptions">
-                    <p>Sport And Physical Activities </p>
-                    <a href="life.html" class="sm-button">
-                      learn more
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                  <div class="school-life-card">
-                    <div class="illustration">
-                      <img src="img/slider.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/library.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/library.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
                     </div>
-                    <div class="descriptions">
-                      <p>Clubs And Community Service</p>
-                      <a href="life.html" class="sm-button">
-                        learn more
-                      </a>
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            
+            <div class="blog-card">
+                <a href="img/person.jpg" class="fancybox" data-fancybox="gallery1">
+                    <img src="img/person.jpg" alt="">
+                    <div class="overlay">
+                      <div class="text"><i class="fas fa-search"></i></div>
                     </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                <div class="school-life-card">
-                    <div class="illustration">
-                      <img src="img/library.jpg" alt="">
-                    </div>
-                    <div class="descriptions">
-                      <p>Safety And Security</p>
-                      <a href="life.html" class="sm-button">
-                        learn more
-                      </a>
-                    </div>
-                </div>
-              </div>
+                </a>
 
             </div>
           </div>
         </div>
+
       </div>
     </section>
-    <!-- End of School Life Section -->
+    <!-- End of Facilites Section -->
 
     <!-- Alumni Section -->
     <section class="alumni">
+      <div class="head-title">
+            <h2>
+              Parent's Testimonials
+            </h2>
+          </div>
       <img src="img/library.jpg" alt="">
       <div class="wrapper">
         <div class="alumni-slider">
@@ -464,7 +532,7 @@
               <img src="img/person.jpg" alt="">
             </div>
             <div class="item-label">
-              <p>Mr. Hari Bahadur <br><span>+2 Student</span></p>
+              <p>Mr. Hari Bahadur <br><span>Erika's Parents</span></p>
 
             </div>
           </div>
@@ -480,7 +548,7 @@
               <img src="img/person1.jpg" alt="">
             </div>
             <div class="item-label">
-              <p>Mrs. Madan Bahadur <br><span>SEE (Board First)</span></p>
+              <p>Mrs. Madan Bahadur <br><span>Hari's Parents</span></p>
 
             </div>
           </div>
@@ -488,103 +556,178 @@
       </div>
       </div>
     </section>
-
     <!-- End of Alumni Section -->
 
-    <!-- Blog Section -->
-    <section class="blog">
+    <!-- School Life Section / News -->
+    <section class="school-life">
       <div class="wrapper">
         <div class="head-title">
           <h2>
-            Blogs & Articles
+            News & Events
           </h2>
-          <a href="blog.html" class="button">View All</a>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            
-            <div class="blog-card">
-              <img src="img/about.jpg" alt="">
-              <div class="card_title">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, saepe?
-                </p>
-              </div>
-              <div class="card-bottom">
-                <a href="single-blog.html" class="sm-button">
-                  learn more
-                </a>
-                <div class="item-right">
-                  <div class="author">
-                    <i class="fas fa-pen"></i>
-                    <a href="">Admin</a>
+          
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="row">
+              
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="school-life-card">
+                  <div class="illustration">
+                    <div class="life-date">
+                      <p>JAN <br>
+                      21</p>
+                    </div>
+                    <div class="life-date">
+                      <p>JAN <br>
+                      21</p>
+                    </div>
+                    <img src="img/transport.jpg" alt="">
                   </div>
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p>2020 Dec 18</p>
+                  <div class="descriptions">
+                    <p>Co-Curricular And Extra Curricular Activities </p>
+                    <a href="single-notice.html" class="sm-button">
+                      learn more
+                    </a>
                   </div>
                 </div>
               </div>
 
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            
-            <div class="blog-card">
-              <img src="img/library.jpg" alt="">
-              <div class="card_title">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, saepe?
-                </p>
-              </div>
-              <div class="card-bottom">
-                <a href="single-blog.html" class="sm-button">
-                  learn more
-                </a>
-                <div class="item-right">
-                  <div class="author">
-                    <i class="fas fa-pen"></i>
-                    <a href="">Admin</a>
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="school-life-card">
+                  <div class="illustration">
+                    <div class="life-date">
+                      <p>JUN <br>
+                      21</p>
+                    </div>
+                    <img src="img/about.jpg" alt="">
+
                   </div>
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p>2020 Dec 18</p>
+                  <div class="descriptions">
+                    <p>Sport And Physical Activities </p>
+                    <a href="single-notice.html" class="sm-button">
+                      learn more
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            
-            <div class="blog-card">
-              <img src="img/person.jpg" alt="">
-              <div class="card_title">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, saepe?
-                </p>
-              </div>
-              <div class="card-bottom">
-                <a href="single-blog.html" class="sm-button">
-                  learn more
-                </a>
-                <div class="item-right">
-                  <div class="author">
-                    <i class="fas fa-pen"></i>
-                    <a href="">Admin</a>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="school-life-card">
+                  <div class="illustration">
+                    <div class="life-date">
+                      <p>JAN <br>
+                      21</p>
+                    </div>
+                    <img src="img/transport.jpg" alt="">
                   </div>
-                  <div class="date">
-                    <i class="fas fa-calendar-alt"></i>
-                    <p>2020 Dec 18</p>
+                  <div class="descriptions">
+                    <p>Co-Curricular And Extra Curricular Activities </p>
+                    <a href="single-notice.html" class="sm-button">
+                      learn more
+                    </a>
                   </div>
                 </div>
               </div>
+
+              <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="school-life-card">
+                  <div class="illustration">
+                    <img src="img/about.jpg" alt="">
+
+                  </div>
+                  <div class="descriptions">
+                    <p>Sport And Physical Activities </p>
+                    <a href="life.html" class="sm-button">
+                      learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="school-life-card">
+                    <div class="illustration">
+                      <img src="img/slider.jpg" alt="">
+                    </div>
+                    <div class="descriptions">
+                      <p>Clubs And Community Service</p>
+                      <a href="life.html" class="sm-button">
+                        learn more
+                      </a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="school-life-card">
+                    <div class="illustration">
+                      <img src="img/library.jpg" alt="">
+                    </div>
+                    <div class="descriptions">
+                      <p>Safety And Security</p>
+                      <a href="life.html" class="sm-button">
+                        learn more
+                      </a>
+                    </div>
+                </div>
+              </div> -->
+
             </div>
           </div>
         </div>
-
       </div>
     </section>
-    <!-- End of Facilites Section -->
+    <!-- End of School Life Section -->
+
+
+        <!-- Alumni Section -->
+        <section class="alumni" style="margin-bottom: 0;">
+          <div class="head-title">
+            <h2>
+              Achievers
+            </h2>
+          </div>
+          <img src="img/library.jpg" alt="">
+          <div class="wrapper">
+            <div class="alumni-slider">
+            <div class="alumni-item">
+              <div class="item-text">
+                <i class="fas fa-quote-left"></i>
+    
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique deleniti soluta, fuga cupiditate ad, ratione est ipsum, quidem maxime voluptatibus assumenda. Quidem distinctio non ratione ipsa vel accusantium numquam, neque aspernatur eligendi dolorem adipisci pariatur autem ullam ad odit in ipsum magnam reiciendis dolores rem ducimus accusamus, fuga voluptates amet?</p>
+              </div>
+              <div class="item-footer">
+                <div class="item-img">
+                  <img src="img/person.jpg" alt="">
+                </div>
+                <div class="item-label">
+                  <p>Mr. Hari Bahadur (2018 Batch)<br>
+                  <span>Doctor | USA</span></p>
+    
+                </div>
+              </div>
+            </div>
+            <div class="alumni-item">
+              <div class="item-text">
+                <i class="fas fa-quote-left"></i>
+    
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique deleniti soluta, fuga cupiditate ad, ratione est ipsum, quidem maxime voluptatibus assumenda. Quidem distinctio non ratione ipsa vel accusantium numquam, neque aspernatur eligendi dolorem adipisci pariatur autem ullam ad odit in ipsum magnam reiciendis dolores rem ducimus accusamus, fuga voluptates amet?</p>
+              </div>
+              <div class="item-footer">
+                <div class="item-img">
+                  <img src="img/person1.jpg" alt="">
+                </div>
+                <div class="item-label">
+                  <p>Mrs. Madan Bahadur <br><span>SEE (Board First)</span></p>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- End of Alumni Section -->
 
     <!-- Footer Section -->
 
@@ -692,6 +835,9 @@
 
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="js/main.js"></script>
 
